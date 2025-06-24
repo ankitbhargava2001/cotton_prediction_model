@@ -286,7 +286,7 @@ with tab3:
             x='Date',
             y='Cotton_Price',
             title="Historical Cotton Prices",
-            labels={'Cotton_Price': 'Price (USD)'}
+            labels={'Cotton_Price': 'Price (INR)'}
         )
         fig.update_layout(height=500)
         st.plotly_chart(fig, use_container_width=True)
@@ -298,7 +298,7 @@ with tab3:
             x='Cotton_Price',
             nbins=50,
             title="Price Distribution",
-            labels={'Cotton_Price': 'Price (USD)'}
+            labels={'Cotton_Price': 'Price (INR)'}
         )
         fig.update_layout(height=400)
         st.plotly_chart(fig, use_container_width=True)
