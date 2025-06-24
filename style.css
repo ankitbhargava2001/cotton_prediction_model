@@ -1,0 +1,183 @@
+/* style.css - Custom styles for Cotton Price Forecasting Dashboard */
+
+/* ========== Main App Container ========== */
+.stApp {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Headers ========== */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h3 {
+    color: #7f8c8d;
+    margin-top: 1.2em;
+}
+
+/* ========== Sidebar ========== */
+.css-1d391kg {
+    background-color: #2c3e50;
+    padding: 2rem 1rem;
+    color: white;
+}
+
+.css-1d391kg h1 {
+    color: white;
+    border-bottom: 2px solid #3498db;
+}
+
+.css-1d391kg .stSelectbox,
+.css-1d391kg .stCheckbox,
+.css-1d391kg .stSlider {
+    margin-bottom: 1.5rem;
+}
+
+/* ========== Metrics Cards ========== */
+.stMetric {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    margin-bottom: 1rem;
+}
+
+.stMetric label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.stMetric div {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* ========== Buttons ========== */
+.stButton>button {
+    border-radius: 8px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stButton>button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stButton>button:active {
+    transform: translateY(0);
+}
+
+/* ========== Tabs ========== */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0 !important;
+    padding: 0.75rem 1.5rem !important;
+    background-color: #ecf0f1 !important;
+    transition: all 0.3s !important;
+    font-weight: 600;
+    color: #7f8c8d;
+    border: none !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #3498db !important;
+    color: white !important;
+}
+
+/* ========== Data Tables ========== */
+.stDataFrame {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Form Elements ========== */
+.stSelectbox, .stDateInput, .stCheckbox {
+    margin-bottom: 1.5rem;
+}
+
+.stSelectbox div, .stDateInput div {
+    border-radius: 8px !important;
+}
+
+/* ========== Footer ========== */
+footer {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+/* ========== Custom Scrollbar ========== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* ========== Tooltips ========== */
+.css-1qg05tj {
+    background-color: #2c3e50 !important;
+    color: white !important;
+    border-radius: 6px !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* ========== Mobile Responsiveness ========== */
+@media (max-width: 768px) {
+    .stMetric div {
+        font-size: 1.4rem;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
