@@ -63,9 +63,15 @@ with st.spinner('Loading data...'):
     forecast_30d = load_forecast_data(30)
     forecast_90d = load_forecast_data(90)
 
-if historical_df is None or performance_df is None or forecast_7d is None:
-    st.error("Data files not found. Please ensure the model pipeline has been run.")
+missing = []
+if historical_df is None: missing.append("combined_dataset.csv")
+if performance_df is None: missing.append("subset_results.csv")
+if forecast_7d is None: missing.append("ensemble_forecast_7days.csv")
+
+if missing:
+    st.error(f"Missing required files: {', '.join(missing)}")
     st.stop()
+
 
 # Sidebar controls
 st.sidebar.header("Dashboard Controls")
