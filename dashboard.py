@@ -27,7 +27,7 @@ local_css("style.css")
 # Load data functions
 def load_forecast_data(days):
     """Load forecast data for specified days."""
-    forecast_path = f"Prediction model/data/forecasts/ensemble_forecast_{days}days.csv"
+    forecast_path = f"ensemble_forecast_{days}days.csv"
     if os.path.exists(forecast_path):
         df = pd.read_csv(forecast_path)
         df['Date'] = pd.to_datetime(df['Date'])
@@ -36,7 +36,7 @@ def load_forecast_data(days):
 
 def load_historical_data():
     """Load historical data."""
-    data_path = "Prediction model/data/processed/combined_dataset.csv"
+    data_path = "combined_dataset.csv"
     if os.path.exists(data_path):
         df = pd.read_csv(data_path)
         df['Date'] = pd.to_datetime(df['Date'])
@@ -45,7 +45,7 @@ def load_historical_data():
 
 def load_model_performance():
     """Load model performance metrics."""
-    metrics_path = "Prediction model/results/subset_results.csv"
+    metrics_path = "subset_results.csv"
     if os.path.exists(metrics_path):
         return pd.read_csv(metrics_path)
     return None
