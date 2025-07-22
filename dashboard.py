@@ -45,7 +45,7 @@ def load_historical_data():
 
 def load_model_performance():
     """Load model performance metrics."""
-    metrics_path = "subset_results_improved.csv"
+    metrics_path = "subset_results.csv"
     if os.path.exists(metrics_path):
         return pd.read_csv(metrics_path)
     return None
